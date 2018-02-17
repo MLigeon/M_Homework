@@ -5,8 +5,11 @@ def read_contacts
   return JSON.parse(contacts_json, { symbolize_names: true })
 end
 
-def list
-  contacts_json.map
-  def
+def display_contacts(contacts)
+  contacts.map do |name , phone|
+  puts "#{name} => #{phone}"
+end
 
-list
+display_contacts
+
+end
