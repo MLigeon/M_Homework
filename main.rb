@@ -31,7 +31,6 @@ def count_org
 end
 
 
-
 puts show_contact
 puts
 puts include_1
