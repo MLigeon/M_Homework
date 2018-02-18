@@ -10,9 +10,15 @@ def show_contact
 end
 
 def include_1
-  contact = read_contacts.select {|x| x[:"phone"].include?("+1")}
+  phone_nr = read_contacts.select {|x| x[:"phone"].include?("+1")}
 end
 
+def include_org
+  org = read_contacts.select {|x| x[:"email"].include?("org")}
+end
 
 puts show_contact
+puts
 puts include_1
+puts
+puts include_org
