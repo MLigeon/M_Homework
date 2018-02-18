@@ -9,4 +9,10 @@ def show_contact
   read_contacts.map{ |contact| { contact[:name] => contact[:phone] } }
 end
 
+def include_1
+  contact = read_contacts.select {|x| x[:"phone"].include?("+1")}
+end
+
+
 puts show_contact
+puts include_1
